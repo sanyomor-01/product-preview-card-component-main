@@ -35,7 +35,6 @@ body{
     background:var(--clr-pri-cream);
     display: grid;
     place-items: center;
-    border: 2px solid red;
     width: 80%;
     min-width: 100vw;
     margin:auto;
@@ -64,9 +63,8 @@ p{
     object-fit: contain;
 }
 .card--container .card--details{
-    margin-top: .8rem;
-    padding: 1rem;
-    border: 2px solid red;
+    margin-top: .5rem;
+    padding: 1.5rem;
 }
 .card--details .label{
     text-transform: uppercase;
@@ -92,9 +90,35 @@ p{
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
 }
-#discounted {
-    font-size: 3rem;
-    color: var();
+.card--details .price .discounted{
+    color:var(--clr-pri-dark-cyan);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Fraunces";
 }
-
+.card--details .price .actual{
+    text-decoration: line-through;
+}
+.cart--btn{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem;
+    width: 100%;
+    justify-content: center;
+    color: var(--clr-neu-white);
+    font-weight: 600;
+    font-size: 1rem;
+    background: var(--clr-pri-dark-cyan);
+    border: 0;
+    border-radius: 0.8rem;
+}
+.cart--btn img{
+    margin-right: 1rem;
+}
+.cart--btn:hover{
+    cursor: pointer;
+    background: var(--clr-neu-dark-blue);
+}
